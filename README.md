@@ -5,7 +5,7 @@
 **Semester:** AY 2025-2026 Sem 1  
 
 ## Abstract
-This project proposes the use of the Apriori algorithm to discover compatibility and co-occurrence patterns among PC components (CPU, GPU, RAM, motherboard, PSU, storage). Using a public hardware specifications dataset, the study will transform attributes into itemsets and mine association rules to identify relationships such as CPU socket ↔ motherboard chipset or GPU tier ↔ PSU wattage. The workflow includes preprocessing, exploratory data analysis (EDA), rule generation, and evaluation using support, confidence, lift, and conviction.
+This project proposes the use of the Apriori algorithm to discover compatibility and co-occurrence patterns among PC components (CPU, GPU, RAM, motherboard, PSU). Using a public hardware specifications dataset, the study will transform attributes into itemsets and mine association rules to identify relationships such as CPU socket ↔ motherboard chipset or GPU tier ↔ PSU wattage. The workflow includes preprocessing, exploratory data analysis (EDA), rule generation, and evaluation using support, confidence, lift, and conviction.
 
 ## Table of Contents
 - [Abstract](#abstract)
@@ -61,7 +61,7 @@ PC building requires matching components that are technically compatible. Unders
 ## 2. Dataset Description
 ### 2.1 Source and Acquisition
 **Source:** General Computer Hardware Dataset – Kaggle (https://www.kaggle.com/datasets/dilshaansandhu/general-computer-hardware-dataset)
-**Contents:** CPU, GPU, RAM, storage, motherboard, PSU specs  
+**Contents:** CPU, GPU, RAM, motherboard, PSU specs  
 **Size:** 9,835 transactions, 169 unique items  
 **Format:** Member ID + timestamp + product name → Transaction basket format
 

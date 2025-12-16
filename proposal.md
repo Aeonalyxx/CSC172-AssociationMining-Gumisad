@@ -20,7 +20,7 @@ This project applies association rule mining to a PC hardware specifications dat
 ## 4. Dataset Plan
 - Source: General Computer Hardware Dataset – Kaggle
   https://www.kaggle.com/datasets/dilshaansandhu/general-computer-hardware-dataset
-- Domain: PC component specifications (CPU, GPU, RAM, storage, PSU, motherboard attributes)
+- Domain: PC component specifications (CPU, GPU, RAM, PSU, motherboard attributes)
 - Size: ~1000+ records across multiple component categories
 - Acquisition: Download CSV from Kaggle and store under data/pc_hardware.csv
 
