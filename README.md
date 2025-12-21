@@ -94,7 +94,7 @@ Transaction 2: ['CPU_Producer:AMD', 'CPU_Socket:AM4', 'CPU_TDP:<=65W',
 ### 3.1 Data Preprocessing
 1. **Missing Value Handling:** Removed incomplete and invalid component combinations
 2. **One-Hot Encoding:** Converted to 6,000 × 132 binary transaction matrix
-3. **Item Filtering:** Generated compatibility of hardware with unique 189 items (support > 0.01) → 9,708 × 132 matrix
+3. **Item Filtering:** Generated compatibility of hardware with unique 189 items (support > 0.01) → 6,000 × 132 matrix
 4. **Final Dataset:** 6,000 transactions × 50 items (92.0% sparsity reduced to manageable size)
 
 **Before/After Statistics:**
