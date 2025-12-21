@@ -156,13 +156,15 @@ Transaction 2: ['CPU_Producer:AMD', 'CPU_Socket:AM4', 'CPU_TDP:<=65W',
 | 25   | MB_Chipset:A88X    | MB_Producer:ASUS   | 0.053   | 1.0        | 3.00  | inf        | 0.036    |
 
 ### 4.2 Key Visualizations
-![Item Frequency Distribution](results/item_frequencies.png) 
+![Item Frequency Distribution](results/item_frequencies.png)
+![Item Transactions](results/item_transactions.png) 
+![Heatmap](results/heatmap.png)
+![Confidence vs Lift](results/confidence_lift.png)
 
 ### 4.3 Performance Metrics
 | Stage           | Time (s)  |
 | --------------- | --------- |
 | Preprocessing   | 20.42     |
-| Apriori         | 9.01      |
 | Rule Generation | 1.29      |
 | **Total**       | **30.72** |
 
