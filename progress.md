@@ -6,16 +6,16 @@
 ## 📊 Current Status
 | Milestone              | Status        | Notes                                                    |
 | ---------------------- | ------------- | -------------------------------------------------------- |
-| Dataset Preparation    | ✅ Completed   | 600 realistic compatible PC build transactions generated |
+| Dataset Preparation    | ✅ Completed   | 6000 realistic compatible PC build transactions generated |
 | Data Preprocessing     | ✅ Completed   | Binned numeric features; one-hot encoded matrix ready    |
 | EDA & Visualization    | ⏳ In Progress | Item frequency distribution and top items computed       |
 | Apriori Implementation | ⏳ Pending     | Initial run planned after EDA                            |
 | Rule Evaluation        | ⏳ Not Started | Planned after Apriori rules are generated                |
 
 ## 1. Dataset Progress
-- **Total transactions:** 600
-- **Unique items:** 179 → Filtered to top 128 items (support > 0.01)
-- **Matrix size:** 600 transactions × 128 items (11.50% density)
+- **Total transactions:** 6000
+- **Unique items:** ~189 → Filtered to top 132 items (support > 0.01)
+- **Matrix size:** 6000 transactions × 132 items (11.17% density)
 - **Preprocessing applied:** Missing values removed, TDP/VRAM/Watt/Size binned, DDR3 excluded, CPU↔MB↔RAM compatibility enforced, one-hot encoding applied
 
 **Sample transaction preview:**
@@ -46,15 +46,15 @@ Transaction 2: ['CPU_Producer:AMD', 'CPU_Socket:AM4', 'CPU_TDP:<=65W',
 **Current Metrics:**
 | Metric               | Value                    |
 | -------------------- | ------------------------ |
-| Transactions cleaned | 600/600 (100%)           |
-| Sparsity             | 11.5%                    |
+| Transactions cleaned | 6000/6000 (100%)           |
+| Sparsity             | 92.1%                    |
 | Top item support     | CPU_Producer:Intel ~0.38 |
 
 ## 3. Challenges Encountered & Solutions
 | Issue                              | Status  | Resolution                                                 |
 | ---------------------------------- | ------- | ---------------------------------------------------------- |
 | Ensuring CPU-MB-RAM compatibility  | ✅ Fixed | Transactions generated respecting Socket and RAM type      |
-| Small number of valid transactions | ✅ Fixed | Generated randomized compatible builds (~600 transactions) |
+| Small number of valid transactions | ✅ Fixed | Generated randomized compatible builds (~6000 transactions) |
 | Non-numeric attributes for ARM     | ✅ Fixed | Binned numeric features (TDP, Watt, VRAM, RAM size)        |
 | Outdated components (DDR3)         | ✅ Fixed | DDR3 removed during preprocessing                          |
 

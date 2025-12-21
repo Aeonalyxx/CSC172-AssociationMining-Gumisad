@@ -37,7 +37,7 @@ Although non-transactional, the dataset will be prepared for association rule mi
     - Binning numeric features (price, wattage, RAM size)
     - TransactionEncoder for multi-item attribute representation
 - Algorithm: Apriori
-    - min_support = 0.05
+    - min_support = 0.02
     - min_confidence = 0.6
     - min_lift = 1.2
 - Tools & Frameworks:
